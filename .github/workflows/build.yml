@@ -4,11 +4,14 @@ on:
   push:
     branches:
      - master
-    paths:
+    paths-ignore:
      - 'src/*'
      - 'package.json'
      - 'public/*'
-
+    # paths:
+    #  - 'src/*'
+    #  - 'package.json'
+    #  - 'public/*'
 jobs:
   build:
     runs-on: ubuntu-latest
